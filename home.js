@@ -28,6 +28,8 @@ document.getElementById("cash-out").addEventListener("click", function () {
   document.getElementById("add-money-section").classList.add("hidden");
   document.getElementById("cash-out-section").classList.remove("hidden");
   document.getElementById("transfer-money-section").classList.add("hidden");
+  document.getElementById("get-bonus-section").classList.add("hidden");
+  document.getElementById("pay-bill-section").classList.add("hidden");
 });
 
 // add money button
@@ -35,6 +37,8 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
   document.getElementById("add-money-section").classList.remove("hidden");
   document.getElementById("cash-out-section").classList.add("hidden");
   document.getElementById("transfer-money-section").classList.add("hidden");
+  document.getElementById("get-bonus-section").classList.add("hidden");
+  document.getElementById("pay-bill-section").classList.add("hidden");
 });
 
 // transfer money
@@ -47,4 +51,25 @@ document
       .getElementById("transfer-money-section")
       .classList.remove("hidden");
     document.getElementById("cash-out-section").classList.add("hidden");
+    document.getElementById("get-bonus-section").classList.add("hidden");
+    document.getElementById("pay-bill-section").classList.add("hidden");
   });
+
+//   get bonous
+
+document.getElementById("bonus").addEventListener("click", function () {
+  document.getElementById("add-money-section").classList.add("hidden");
+  document.getElementById("get-bonus-section").classList.remove("hidden");
+  document.getElementById("cash-out-section").classList.add("hidden");
+  document.getElementById("transfer-money-section").classList.add("hidden");
+  document.getElementById("pay-bill-section").classList.add("hidden");
+});
+
+// pay bill
+document.getElementById("pay-bill").addEventListener("click", function () {
+  document.getElementById("pay-bill-section").classList.remove("hidden");
+  document.getElementById("add-money-section").classList.add("hidden");
+  document.getElementById("cash-out-section").classList.add("hidden");
+  document.getElementById("transfer-money-section").classList.add("hidden");
+  document.getElementById("get-bonus-section").classList.add("hidden");
+});
