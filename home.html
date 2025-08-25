@@ -49,39 +49,39 @@
 
         <div class="grid grid-cols-3 gap-5 my-6">
             <div id="add-money-btn"
-                class="border border-[#0874F2] rounded-xl bg-[#0874f20d] flex flex-col items-center gap-2 px-[10px] py-[20px]">
+                class="form-btn border border-[#0874F2] rounded-xl bg-[#0874f20d] flex flex-col items-center gap-2 px-[10px] py-[20px]">
                 <img src="./assets/wallet1.png" alt="">
                 <h5 class="text-[#0874F2] text-sm font-semibold">Add Money</h5>
             </div>
             <div id="cash-out"
-                class="border border-[#0874F2] rounded-xl bg-[#0874f20d] flex flex-col items-center gap-2 px-[10px] py-[20px]">
+                class="form-btn border border-[#0874F2] rounded-xl bg-[#0874f20d] flex flex-col items-center gap-2 px-[10px] py-[20px]">
                 <img src="./assets/send1.png" alt="">
                 <h5 class="text-[#0874F2] text-sm font-semibold">Cashout</h5>
             </div>
             <div id="transfer-money"
-                class="border border-[#0874F2] rounded-xl bg-[#0874f20d] flex flex-col items-center gap-2 px-[10px] py-[20px]">
+                class="form-btn border border-[#0874F2] rounded-xl bg-[#0874f20d] flex flex-col items-center gap-2 px-[10px] py-[20px]">
                 <img src="./assets/money1.png" alt="">
                 <h5 class="text-[#0874F2] text-sm font-semibold">Transfer Money</h5>
             </div>
             <div id="bonus"
-                class="border border-[#0874F2] rounded-xl bg-[#0874f20d] flex flex-col items-center gap-2 px-[10px] py-[20px]">
+                class="form-btn border border-[#0874F2] rounded-xl bg-[#0874f20d] flex flex-col items-center gap-2 px-[10px] py-[20px]">
                 <img src="./assets/bonus1.png" alt="">
                 <h5 class="text-[#0874F2] text-sm font-semibold">Get Bonus</h5>
             </div>
             <div id="pay-bill"
-                class="border border-[#0874F2] rounded-xl bg-[#0874f20d] flex flex-col items-center gap-2 px-[10px] py-[20px]">
+                class="form-btn border border-[#0874F2] rounded-xl bg-[#0874f20d] flex flex-col items-center gap-2 px-[10px] py-[20px]">
                 <img src="./assets/purse1.png" alt="">
                 <h5 class="text-[#0874F2] text-sm font-semibold">Pay Bill</h5>
             </div>
             <div id="transaction"
-                class="border border-[#0874F2] rounded-xl bg-[#0874f20d] flex flex-col items-center gap-2 px-[10px] py-[20px]">
+                class="form-btn border border-[#0874F2] rounded-xl bg-[#0874f20d] flex flex-col items-center gap-2 px-[10px] py-[20px]">
                 <img src="./assets/transaction1.png" alt="">
                 <h5 class="text-[#0874F2] text-sm font-semibold">Transactions</h5>
             </div>
         </div>
     </div>
     <!-- add money -->
-    <div id="add-money-section">
+    <div id="add-money-section" class="forms">
         <h2 class="text-[#080808E5] text-lg font-semibold px-6 py-8 max-w-lg mx-auto">Add Money</h2>
         <div class="max-w-lg mx-auto bg-[#FFFFFF] rounded-3xl">
             <div class="p-6">
@@ -109,26 +109,26 @@
         </div>
     </div>
     <!-- cash out -->
-    <div id="cash-out-section" class="hidden">
+    <div id="cash-out-section" class="hidden forms">
         <h2 class="text-[#080808E5] text-lg font-semibold px-6 py-8 max-w-lg mx-auto">Cash Out</h2>
         <div class="max-w-lg mx-auto bg-[#FFFFFF] rounded-3xl">
             <div class="p-6">
                 <label class="text-[#080808] font-medium" for="">Agent Number</label>
-                <input id="amount" type="text" placeholder="Enter 11 digit number"
+                <input id="agent" type="text" placeholder="Enter 11 digit number"
                     class="input rounded-2xl bg-[#F4F5F7] mt-3 w-full my-3" />
                 <label class="text-[#080808] font-medium" for="">Amount</label>
-                <input id="add" type="text" placeholder="Enter amount to withdraw"
+                <input id="cash-amount" type="text" placeholder="Enter amount to withdraw"
                     class="input rounded-2xl bg-[#F4F5F7] mt-3 w-full my-3" />
                 <label class="text-[#080808] font-medium" for="">Pin Number</label>
-                <input id="add-pin" type="text" placeholder="Enter 4 digit pin number"
+                <input id="cash-pin" type="text" placeholder="Enter 4 digit pin number"
                     class="input rounded-2xl bg-[#F4F5F7] mt-3 w-full my-3" />
-                <button id="add-money" class="btn btn-primary bg-[#0874F2] w-full mt-4 border-none rounded-3xl">Withdraw
+                <button id="withdraw" class="btn btn-primary bg-[#0874F2] w-full mt-4 border-none rounded-3xl">Withdraw
                     Money</button>
             </div>
         </div>
     </div>
     <!-- transfer money -->
-    <div id="transfer-money-section" class="hidden">
+    <div id="transfer-money-section" class="hidden forms">
         <h2 class="text-[#080808E5] text-lg font-semibold px-6 py-8 max-w-lg mx-auto">Transfer Money</h2>
         <div class="max-w-lg mx-auto bg-[#FFFFFF] rounded-3xl">
             <div class="p-6">
@@ -147,7 +147,7 @@
         </div>
     </div>
     <!-- get pay -->
-    <div id="get-bonus-section" class="hidden">
+    <div id="get-bonus-section" class="hidden forms">
         <h2 class="text-[#080808E5] text-lg font-semibold px-6 py-8 max-w-lg mx-auto">Bonus</h2>
         <div class="max-w-lg mx-auto bg-[#FFFFFF] rounded-3xl">
             <div class="p-6">
@@ -160,7 +160,7 @@
         </div>
     </div>
     <!-- pay bill -->
-    <div class="hidden" id="pay-bill-section">
+    <div class="hidden forms" id="pay-bill-section">
         <h2 class="text-[#080808E5] text-lg font-semibold px-6 py-8 max-w-lg mx-auto">Pay Bill</h2>
         <div class="max-w-lg mx-auto bg-[#FFFFFF] rounded-3xl">
             <div class="p-6">
@@ -186,6 +186,31 @@
                     Now</button>
             </div>
         </div>
+    </div>
+    <!-- transaction -->
+    <div id="transaction-section" class="hidden forms max-w-lg mx-auto">
+        <div class="flex justify-between items-center">
+            <h2 class="text-[#080808E5] text-lg font-semibold px-6 py-8">Transaction History</h2>
+            <p class="text-sm font-normal text-[#08080880]">View All</p>
+        </div>
+        <div id="transaction-container">
+            <!-- <div class="max-w-lg mx-auto flex justify-between items-center bg-[#FFFFFF] rounded-3xl">
+                <div class="p-6 flex gap-2">
+                    <div>
+                        <div class="border-2 p-3 rounded-full">
+                            <img src="./assets/wallet1.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Electricity Bill</h4>
+                        <p>Today 01:44 AM</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical px-6"></i>
+            </div> -->
+        </div>
+    </div>
+
     </div>
     <!-- js file -->
     <script src="./home.js"></script>
