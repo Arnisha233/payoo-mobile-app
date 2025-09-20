@@ -1,7 +1,7 @@
 // login account
 
 document.getElementById("login-btn").addEventListener("click", function () {
-  const phone = 1765621002;
+  const phone = 175789855;
   const pinNumbeer = 1234;
 
   const mobileNumber = parseInt(document.getElementById("mobile").value);
